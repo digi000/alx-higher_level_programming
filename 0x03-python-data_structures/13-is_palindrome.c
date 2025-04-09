@@ -2,12 +2,17 @@
 #include "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * is_palindrome - we
+ * @head: df
+ * Return: 0r1
+ */
 int is_palindrome(listint_t **head)
 {
 	listint_t *current;
 	int hl, ln, lt, sz;
 	int *ar = malloc(sizeof(int) * 1);
-	
+
 	if (head == NULL)
 		return (1);
 	ln = 0;

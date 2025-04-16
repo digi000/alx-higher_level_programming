@@ -1,0 +1,17 @@
+>>> md = __import__("4-print_square").print_square
+>>> md(2)
+##
+##
+>>> md(0)
+>>> md(-2)
+Traceback (most recent call last):
+ValueError: size must be >= 0
+>>> md(3.5)
+Traceback (most recent call last):
+TypeError: size must be an integer
+>>> md()
+Traceback (most recent call last):
+TypeError: print_square() missing 1 required positional argument: 'size'
+>>> md("89")
+Traceback (most recent call last):
+TypeError: size must be an integer

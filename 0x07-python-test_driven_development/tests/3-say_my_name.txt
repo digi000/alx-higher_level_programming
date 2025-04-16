@@ -1,0 +1,12 @@
+>>> md = __import__("3-say_my_name").say_my_name
+>>> md(4, "jan")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+>>> md("4", 6)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+>>> md("Jim", "Rohn")
+My name is Jim Rohn
+>>> md()
+Traceback (most recent call last):
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'

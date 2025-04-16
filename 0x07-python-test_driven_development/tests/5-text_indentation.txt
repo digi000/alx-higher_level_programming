@@ -1,0 +1,21 @@
+# doctest: +NORMALIZE_WHITESPACiE
+>>> md = __import__("5-text_indentation").text_indentation
+>>> md()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+>>> md("i.t.t") # doctest: +NORMALIZE_WHITESPACE
+i.
+
+t.
+
+t>>> md(34)
+Traceback (most recent call last):
+TypeError: text must be a string
+>>> md("hello:man.win?gool") # doctest: +NORMALIZE_WHITESPACE
+hello:
+
+man.
+
+win?
+
+gool

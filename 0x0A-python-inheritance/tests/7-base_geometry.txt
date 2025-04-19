@@ -1,0 +1,19 @@
+>>> md = __import__("7-base_geometry").BaseGeometry
+>>> ob = md()
+>>> ob.integer_validator("f1", 24)
+>>> ob.integer_validator("f1", True)
+>>> ob.integer_validator("f1", '9')
+Traceback (most recent call last):
+TypeError: f1 must be an integer
+>>> ob.integer_validator("f1", -5)
+Traceback (most recent call last):
+ValueError: f1 must be greater than 0
+>>> ob.integer_validator("f1", 0)
+Traceback (most recent call last):
+ValueError: f1 must be greater than 0
+>>> ob.integer_validator("f1", "kin")
+Traceback (most recent call last):
+TypeError: f1 must be an integer
+>>> ob.integer_validator("f1", False)
+Traceback (most recent call last):
+ValueError: f1 must be greater than 0

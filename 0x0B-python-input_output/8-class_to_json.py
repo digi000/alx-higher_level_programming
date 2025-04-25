@@ -3,4 +3,5 @@
 import json
 def class_to_json(obj):
     """8. Class to JSON"""
-    return json.dumps(obj)
+    data = vars(obj)
+    return json.dumps(dict(data))

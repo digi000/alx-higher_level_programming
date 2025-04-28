@@ -50,4 +50,11 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = value
     def area(self):
+        """4. Area first"""
         return self.__width * self.__height
+    def display(self):
+        """5. Display #0"""
+        for i in range(self.__height):
+            for m in range(self.__width):
+                print("#", end="")
+            print()

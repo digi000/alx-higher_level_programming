@@ -1,0 +1,2 @@
+-- sh databases
+SHOW DATABASES;

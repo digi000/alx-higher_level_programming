@@ -1,0 +1,2 @@
+-- st
+SHOW TABLES;

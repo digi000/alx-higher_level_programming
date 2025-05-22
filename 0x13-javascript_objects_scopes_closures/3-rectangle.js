@@ -15,12 +15,7 @@ class Rectangle
 		let i;
 		for (i = 0; i < this.height; i++)
 		{
-			let j;
-			for (j = 0; j < this.width; j++)
-			{
-				process.stdout.write('x');
-			}
-			console.log();
+			console.log('x'.repeat(this.width));
 		}
 	}
 }

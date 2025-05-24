@@ -11,6 +11,6 @@ if __name__ == "__main__":
             port=3306
             )
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM states WHERE name= {} ORDER BY states.id".format(argv[4]))
+    cursor.execute("SELECT * FROM states WHERE name= '{}' ORDER BY states.id".format(argv[4]))
     for row in cursor.fetchall():
         print(row)

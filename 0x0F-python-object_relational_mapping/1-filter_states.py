@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""1. Filter states"""
 if __name__ == "__main__":
     import MySQLdb, sys
     conn = MySQLdb.connect(
